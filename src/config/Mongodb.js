@@ -13,8 +13,7 @@ class Connection {
 }
 
 Connection.db = null;
-Connection.url =
-  "mongodb+srv://demo:demo123@cluster0.ajcsx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+Connection.url = process.env.MONGODB_URL;
 Connection.options = {
   useUnifiedTopology: true,
 };
